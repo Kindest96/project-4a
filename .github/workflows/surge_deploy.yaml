@@ -27,7 +27,9 @@ jobs:
       run: sudo yarn add history@5 react-router-dom@6.0.0-beta.0 @wellyshen/use-web-animations
             
     - name: Build React App
-      run: yarn build
+      run: |
+        unset CI
+        yarn build
       
     - name: Deploy surge
       run: surge ./build kindest_project4a.surge.sh --token ${{secrets.SURGE_TOKEN}}
