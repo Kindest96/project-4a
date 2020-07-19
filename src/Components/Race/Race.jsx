@@ -126,7 +126,6 @@ const Race = () => {
                     break;
         }
     });
-    document.addEventListener('touchstart', goFaster());
     
     return (
         <div className="wrapper">
