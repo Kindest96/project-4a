@@ -131,7 +131,7 @@ const Race = () => {
         <div className="wrapper">
         <div className="sky" id="sky" ref={skyAnimationRef}></div>
         <div className="earth">
-            <div id="queen_with_alice" onClick={() => goFaster()}>
+            <div id="queen_with_alice" onClick={() => goFaster()} onTouchStart={() => goFaster()}>
                     <img src={alice} alt=" " id="queen_with_alice_sprite" ref={aliceAnimationRef} />
             </div>
         </div>
