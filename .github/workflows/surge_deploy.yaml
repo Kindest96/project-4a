@@ -32,4 +32,4 @@ jobs:
         yarn build
       
     - name: Deploy surge
-      run: surge ./build kindest_project4a.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      run: surge ./build asif_project4a.surge.sh --token ${{secrets.SURGE_TOKEN}}
